@@ -1,0 +1,21 @@
+<%= form_for(@pesquisaqualitativa) do |f| %>
+  <% if @pesquisaqualitativa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pesquisaqualitativa.errors.count, "error") %> prohibited this pesquisaqualitativa from being saved:</h2>
+
+      <ul>
+      <% @pesquisaqualitativa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_area :pesquisaqualitativa %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Salvar" %>
+    <td><%= link_to 'Voltar', pesquisaqualitativas_path %></td>
+  </div>
+<% end %>

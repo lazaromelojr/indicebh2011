@@ -1,0 +1,2 @@
+module IndicetvHelper
+end

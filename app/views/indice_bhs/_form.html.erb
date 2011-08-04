@@ -1,0 +1,24 @@
+<%= form_for(@indice_bh) do |f| %>
+  <% if @indice_bh.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@indice_bh.errors.count, "error") %> prohibited this indice_bh from being saved:</h2>
+
+      <ul>
+      <% @indice_bh.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_area :testoprincipal, :class => "textAreaIndiceBH" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Salvar" %>
+    <%= link_to(image_tag("Voltar", :class => "botaogeral"), indice_bhs_path ) %></td>
+    
+
+   
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<h1>Listing cadastro_clientes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cnpj</th>
+    <th>Telefone</th>
+    <th>Fax</th>
+    <th>Tipologradouro</th>
+    <th>Logradouro</th>
+    <th>Numero</th>
+    <th>Complemento</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Estado</th>
+    <th>Cep</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cadastro_clientes.each do |cadastro_cliente| %>
+  <tr>
+    <td><%= cadastro_cliente.nome %></td>
+    <td><%= cadastro_cliente.cnpj %></td>
+    <td><%= cadastro_cliente.telefone %></td>
+    <td><%= cadastro_cliente.fax %></td>
+    <td><%= cadastro_cliente.tipologradouro %></td>
+    <td><%= cadastro_cliente.logradouro %></td>
+    <td><%= cadastro_cliente.numero %></td>
+    <td><%= cadastro_cliente.complemento %></td>
+    <td><%= cadastro_cliente.bairro %></td>
+    <td><%= cadastro_cliente.cidade %></td>
+    <td><%= cadastro_cliente.estado %></td>
+    <td><%= cadastro_cliente.cep %></td>
+    <td><%= link_to 'Show', cadastro_cliente %></td>
+    <td><%= link_to 'Edit', edit_cadastro_cliente_path(cadastro_cliente) %></td>
+    <td><%= link_to 'Destroy', cadastro_cliente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cadastro cliente', new_cadastro_cliente_path %>

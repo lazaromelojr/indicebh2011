@@ -1,0 +1,30 @@
+<%= form_for(@nossos_servico) do |f| %>
+  <% if @nossos_servico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nossos_servico.errors.count, "error") %> prohibited this nossos_servico from being saved:</h2>
+
+      <ul>
+      <% @nossos_servico.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <table>
+       <tr>
+          <td><%= f.text_area :pesquisaQuantitativa %></td>
+       </tr>
+    </table>
+  </div>
+
+  <div class="actions">
+    <table>
+       <tr>
+           <td><%= f.submit "Salvar" %></td>
+           <td><%= link_to 'Voltar', nossos_servicos_path %></td>
+       </tr>
+    </table>
+  </div>
+<% end %>

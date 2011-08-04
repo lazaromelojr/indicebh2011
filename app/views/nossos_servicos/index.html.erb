@@ -1,0 +1,18 @@
+ 
+  <div id="conteudoIframe">
+    <table>
+	<% @nossos_servicos.each do |nossos_servico| %>
+	  <tr>
+	    <td><%= nossos_servico.pesquisaQuantitativa %></td>
+	  </tr>
+	  <tr>
+	  	<% if signed_in? %>
+		    <td><%= link_to 'Editar', edit_nossos_servico_path(nossos_servico) %></td>
+		<% end %>
+	  </tr>
+	<% end %>
+   </table>
+   
+  </div>
+   
+

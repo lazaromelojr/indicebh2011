@@ -1,0 +1,2 @@
+module IndiceBHsHelper
+end

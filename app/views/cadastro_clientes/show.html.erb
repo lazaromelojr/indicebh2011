@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @cadastro_cliente.nome %>
+</p>
+
+<p>
+  <b>Cnpj:</b>
+  <%= @cadastro_cliente.cnpj %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @cadastro_cliente.telefone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @cadastro_cliente.fax %>
+</p>
+
+<p>
+  <b>Tipologradouro:</b>
+  <%= @cadastro_cliente.tipologradouro %>
+</p>
+
+<p>
+  <b>Logradouro:</b>
+  <%= @cadastro_cliente.logradouro %>
+</p>
+
+<p>
+  <b>Numero:</b>
+  <%= @cadastro_cliente.numero %>
+</p>
+
+<p>
+  <b>Complemento:</b>
+  <%= @cadastro_cliente.complemento %>
+</p>
+
+<p>
+  <b>Bairro:</b>
+  <%= @cadastro_cliente.bairro %>
+</p>
+
+<p>
+  <b>Cidade:</b>
+  <%= @cadastro_cliente.cidade %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @cadastro_cliente.estado %>
+</p>
+
+<p>
+  <b>Cep:</b>
+  <%= @cadastro_cliente.cep %>
+</p>
+
+
+<%= link_to 'Edit', edit_cadastro_cliente_path(@cadastro_cliente) %> |
+<%= link_to 'Back', cadastro_clientes_path %>

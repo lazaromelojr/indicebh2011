@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indicebh2010</title>
+<%= javascript_include_tag :defaults %>
+<%= stylesheet_link_tag :all %>
+<%= csrf_meta_tag %>
+</head>
+<body>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+ <% if signed_in? %>
+  <p>
+  Olá, seja bem vindo <%= current_user.email %>
+  <%= link_to "Sair", logout_path %>
+  </p>
+ <% else %>   
+  <p>
+  <%= link_to "Entrar", new_user_session_path %>
+  </p>
+ <% end %>
+
+<%= yield %>
+
+</body>
+</html>

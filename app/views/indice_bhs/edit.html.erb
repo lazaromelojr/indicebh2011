@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>INDICE - Pesquisa de Opinião</title>
+   
+   <script>
+          <%= javascript_include_tag :defaults %>
+          <%= csrf_meta_tag %>
+   </script>
+    
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> 
+   </script>
+        
+        <style type="text/css">
+           @import url("stylesheets/scaffold.css");
+        </style>
+
+  </head>
+  <body>
+  
+  <div id="espacomarcatopo">
+     <div id="imagemtopodireita">
+        <img src="/images/img_topo_incide.jpg" alt="Indece BH" border="0" />
+     </div>
+        
+     <div id="marcatopo">
+        <a href="index.html"> <img src="/images/indice_amarelo.jpg" alt="Indece BH" border="0" /></a>
+     </div>
+  </div>
+  
+  <div id="faixaamarela"></div>
+  
+  
+  <div id="menutopo">
+  <ul>  
+  	<li> <a href="./indice_bhs"> <div class="btnindice2"> </div> </a></li>
+        <li> <a href="#"> <div class="btnnossoservicos"> </div> </a></li>
+        <li> <a href="#"> <div class="btnindicetv"> </div> </a> </li>
+        <li> <a href="#"> <div class="btnclientes"> </div> </a> </li>
+        <li> <a href="#"> <div class="btninstalacoes"> </div> </a></li>
+        <li> <a href="#"> <div class="btncontato"> </div> </a> </li>
+       
+  </ul>
+  </div>
+  
+  <div id="conteudocentralgeralEdit">
+  
+     <div id="textoIndiceBH">
+
+	<h1>Edição Texto Indice BH</h1>
+
+	<%= render 'form' %>
+	
+     </div>
+     
+     <div id="imagemIndiceBH">
+    	<img src="/images/img_indice_principal.jpg" alt="Indice BH" border="0" />
+    </div>
+     
+  </div>
+  
+  <div id="faixaamarelafooter"></div>
+  </body>
+</html>
+
+

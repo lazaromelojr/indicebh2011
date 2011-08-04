@@ -1,0 +1,14 @@
+<div id="conteudoIframe">
+   <table>
+	<% @pesquisaqualitativas.each do |pesquisaqualitativa| %>
+	  <tr>
+	    <td><%= pesquisaqualitativa.pesquisaqualitativa %></td>
+	  </tr>
+	  <tr>
+	  	<% if signed_in? %>
+		    <td><%= link_to 'Editar', edit_pesquisaqualitativa_path(pesquisaqualitativa) %></td>
+		<% end %>
+	  </tr>
+   <% end %>
+   </table>
+</div>
