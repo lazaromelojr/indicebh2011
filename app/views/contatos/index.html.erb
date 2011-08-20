@@ -2,36 +2,36 @@
 <html>
   <head>
    <title>INDICE - Pesquisa de Opinião</title>
-   
+
    <script>
           <%= javascript_include_tag :defaults %>
           <%= csrf_meta_tag %>
    </script>
-    
-   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> 
+
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
    </script>
-        
+
         <style type="text/css">
            @import url("stylesheets/scaffold.css");
         </style>
 
   </head>
   <body>
-  
+
   <div id="espacomarcatopo">
      <div id="imagemtopodireitacontato">
         <img src="/images/img_topo_contato.jpg" alt="Indece BH" border="0" />
      </div>
-        
+
      <div id="marcatopo">
-        <a href="index.html"> <img src="/images/indice_vinho.jpg" alt="Indece BH" border="0" /></a>
+        <a href="indice_pincipals"> <img src="/images/indice_vinho.jpg" alt="Indece BH" border="0" /></a>
      </div>
   </div>
-  
+
   <div id="faixacontato"></div>
- 
+
   <div id="menutopo">
-  <ul>       
+  <ul>
         <li> <a href="./indice_bhs"> <div class="btnindice"> </div> </a></li>
         <li> <a href="./servicosindices"> <div class="btnnossoservicos"> </div> </a></li>
         <li> <a href="./indiceconexaos"> <div class="btnindicetv"> </div> </a> </li>
@@ -40,17 +40,14 @@
         <li> <a href="./contatos"> <div class="btncontato2"> </div> </a> </li>
   </ul>
   </div>
-  
+
   <div id="conteudocentralhome">
      <div id="centrohomeimagem">
-        <FORM METHOD="POST" ACTION="#" id="formContato">
-        <input type="hidden" name="recipient" value="#">
-        <input type="hidden" name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
-        <INPUT TYPE="hidden" NAME="redirect" VALUE="#"> 
-    
+        <FORM ACTION="http://form.ultramail.com.br/" METHOD="POST">
+
         <P>
-          <!-- 
-  Formulário do cliente. 
+          <!--
+  Formulário do cliente.
   Especifique abaixo os campos que deseja enviar para e-mail.
   Caso o campo assunto não seja preenchido, o sistema irá enviar o e-mail com o assunto Formulário UltraMail
 -->
@@ -66,39 +63,44 @@
           Mensagem: <BR>
           <TEXTAREA NAME="mensagem" ROWS="8" COLS="20" style="border:solid 1px #B50009; height:85px; width:530px; font-family:Tahoma, Geneva, sans-serif; font-size:14px; color:#999; padding-top:5px; padding-left:5px;margin-bottom:15px;"></TEXTAREA>
           <br />
-          <!-- 
-  Chave de autenticação no UltraMail para o MailBox. 
+          <!--
+  Chave de autenticação no UltraMail para o MailBox.
   Se a senha do MailBox for alterada esta chave deverá ser gerada novamente através do seu painel de controle.
 -->
-          
-          <!-- 
-  Pagina de conclusão do formulário de envio. Altere para a página desejada 
+
+          <!--
+  Pagina de conclusão do formulário de envio. Altere para a página desejada
 -->
-	  <input type="hidden" name="subject" value="CONTATO" />
-          <input type="hidden" name="email" value="Contato vindo atraves do site" />
-          <INPUT TYPE="submit" VALUE="Enviar">
-          <INPUT TYPE="reset" VALUE="Limpar">
+  <INPUT TYPE="hidden" NAME="key" VALUE="eJwBwAA//0Ps8Jnt61Pt2wM3WOytI8LkSd2Aamo04l44TWAMtnuoRm9ybVVsdHJhTWFpbCbPp2HDOo7eqK01ZvY48bkv5MZ4WGIlyB/WfAkz781cAZNxV7r5aWHe/qfkzSKhrJhBifL5xMdgUfHqSZs0RiGULfXIpzVePYyGMMUf5ErZtymIAKOSVdYSYgWK0TWVRhyJbkvOggmc6GzlTAj6SoTbv06gYSI8SYIYPC5g0BLXeTIAIlOj1G/wTVz32EPdftqV3VgyYTw=">
+
+      <INPUT TYPE="hidden" NAME="redirect" VALUE="http://indicebh.com.br/">
+
+        <input type="hidden" name="email" value="Contato vindo atraves do site" />
+        <INPUT TYPE="submit" VALUE="Enviar">
+        <INPUT TYPE="reset" VALUE="Limpar">
+
         </P>
       </FORM>
      </div>
   </div>
-  
-  
+
+
   <div id="conteudofooter">
-     <p> Rua Cuiabá | Bairro Prado | Belo Horizonte | CEP 30840-500 | Minas Gerais</p>
-     <p> Telefone: 31 3371.2874 | Free Call: 0800.283.3313 | E-mail:indice@indicebh.com.br </p>
+     <p>Rua Professor Arduino Bolivar | 215 | Santo Antônio | Belo Horizonte | CEP 30.350-140 | Minas Gerais</p>
+     <p>Telefone: 31 3371.2874 | Free Call: 0800.283.3313 | E-mail:indice@indicebh.com.br | <a class="comochegar" href="http://maps.google.com.br/maps?q=Rua+Professor+Arduino+Bolivar+|+215+|+Santo+Ant%C3%B4nio+|+Belo+Horizonte+|+CEP+30.350-140+|+Minas+Gerai&hl=pt-BR&ie=UTF8&sll=-19.934906,-43.932416&sspn=0.006183,0.009645&vpsrc=0&z=17" target="_blank"> Como chegar </a>  </p>
   </div>
-  
+
   <div id="espacomarcafooter">
      <div id="imagemfooteresquerdacontato">
         <img src="/images/img_footer_contato.jpg" alt="Indece BH" border="0" />
      </div>
   </div>
-  
+
   <div id="faixacontatofooter"></div>
-  
-  
-  
-  
+
+
+
+
   </body>
 </html>
+

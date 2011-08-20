@@ -10,10 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110803235939) do
+ActiveRecord::Schema.define(:version => 20110812005109) do
 
   create_table "a_indice_bhs", :force => true do |t|
     t.text     "textoprincipal"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_indicebhs", :force => true do |t|
+    t.string   "email"
+    t.string   "senha"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -82,6 +89,12 @@ ActiveRecord::Schema.define(:version => 20110803235939) do
     t.datetime "updated_at"
   end
 
+  create_table "indice_pincipals", :force => true do |t|
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "indice_tvs", :force => true do |t|
     t.string   "senha"
     t.datetime "created_at"
@@ -90,6 +103,12 @@ ActiveRecord::Schema.define(:version => 20110803235939) do
 
   create_table "indiceconexaos", :force => true do |t|
     t.string   "senha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "indices", :force => true do |t|
+    t.string   "nome"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

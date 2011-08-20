@@ -18,5 +18,9 @@ test:
 production:
   adapter: sqlite3
   database: db/production.sqlite3
+  usuario: indicebh
+  password: matheusteixeiradesouza2007
+  host: sqlite3.indicebh.com.br
   pool: 5
   timeout: 5000
+

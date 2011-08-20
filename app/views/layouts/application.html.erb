@@ -8,21 +8,25 @@
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+
+
+<!--
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
  <% if signed_in? %>
   <p>
   Olá, seja bem vindo <%= current_user.email %>
   <%= link_to "Sair", logout_path %>
   </p>
- <% else %>   
+ <% else %>
   <p>
   <%= link_to "Entrar", new_user_session_path %>
   </p>
  <% end %>
-
+-->
 <%= yield %>
 
 </body>
 </html>
+

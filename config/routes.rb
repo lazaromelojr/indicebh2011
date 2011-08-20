@@ -1,5 +1,11 @@
 Indicebh2010::Application.routes.draw do
 
+  resources :admin_indicebhs
+
+  resources :indice_pincipals
+
+  resources :indices
+
   devise_for :users do
    get 'logout' => 'devise/sessions#destroy'
   end
@@ -21,9 +27,10 @@ Indicebh2010::Application.routes.draw do
   resources :indice_bhs
 
   resources :usuarios
-  
-  root :to => "indice_bhs#index"
+
+  root :to => "indice_pincipals#index"
 
   resources :cadastro_clientes
 
 end
+

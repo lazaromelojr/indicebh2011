@@ -11,23 +11,23 @@ body, p, ol, ul, td {
 	/* You MUST specify the width and height */
 	width:500px;
 	height:350px;
-	position:relative;	
+	position:relative;
 	overflow:hidden;
 }
 
 #mask-gallery {
-   overflow:hidden;	
+   overflow:hidden;
 }
 
 #gallery {
-	
+
 	/* Clear the list style */
 	list-style:none;
 	margin:0;
 	padding:0;
-	
+
 	z-index:0;
-	
+
 	/* width = total items multiply with #mask gallery width */
 	width:900px;
 	overflow:hidden;
@@ -40,55 +40,55 @@ body, p, ol, ul, td {
 
 
 #mask-excerpt {
-	
+
 	/* Set the position */
-	position:absolute;	
+	position:absolute;
 	top:0;
 	left:0;
 	z-index:500px;
-	
+
 	/* width should be lesser than #slider width */
 	width:100px;
-	overflow:hidden;	
-	
+	overflow:hidden;
+
 
 }
-	
+
 #excerpt {
 	/* Opacity setting for different browsers */
 	filter:alpha(opacity=60);
-	-moz-opacity:0.6;  
+	-moz-opacity:0.6;
 	-khtml-opacity: 0.6;
-	opacity: 0.6;  
-	
+	opacity: 0.6;
+
 	/* Clear the list style */
 	list-style:none;
 	margin:0;
 	padding:0;
-	
+
 	/* Set the position */
 	z-index:10;
 	position:absolute;
 	top:0;
 	left:0;
-	
+
 	/* Set the style */
 	width:100px;
 	background-color:#000;
 	overflow:hidden;
 	font-family:arial;
 	font-size:10px;
-	color:#fff;	
+	color:#fff;
 }
 
 #excerpt li {
    padding:5px;
 }
-	
+
 
 
 .clear {
-   clear:both;	
+   clear:both;
 }
 
 
@@ -101,10 +101,12 @@ body, p, ol, ul, td {
 }
 
 #marcatopo{
-   width:178px;
-   height:97px;
+   width:280px;
+   height:82px;
    margin: 0 auto;
    padding-top:40px;
+   float:left;
+   margin-left:170px;
 }
 
 
@@ -224,7 +226,7 @@ body, p, ol, ul, td {
    width:100%;
    height:4px;
    background: #8FA80E;
-   margin-top:-147px;
+   margin-top:-77px;
    float:left;
 }
 
@@ -291,6 +293,18 @@ body, p, ol, ul, td {
    margin: 0 auto;
 }
 
+#conteudocentralcontato{
+   width:1024px;
+   height:150px;
+   margin: 0 auto;
+}
+
+#conteudocentralclientes{
+   width:650px;
+   height:auto;
+   margin: 0 auto;
+}
+
 #conteudocentralindicetv{
    width:1024px;
    height:315px;
@@ -298,8 +312,14 @@ body, p, ol, ul, td {
 }
 
 #centrohomeimagem{
-   width:809px;
-   height:309px;
+   width:915px;
+   height:331px;
+   margin: 0 auto;
+}
+
+#centroconteudomensagem{
+   width:915px;
+   height:150px;
    margin: 0 auto;
 }
 
@@ -328,6 +348,12 @@ body, p, ol, ul, td {
    margin: 0 auto;
 }
 
+#conteudocentralgerallogin{
+   width:990px;
+   height:470px;
+   margin: 0 auto;
+}
+
 #conteudocentralgeralEdit{
    width:990px;
    height:450px;
@@ -343,7 +369,7 @@ body, p, ol, ul, td {
 
 #menulateralservicos{
    width:320px;
-   height:150px; 
+   height:150px;
    margin-left:50px;
    float:left;
    margin-top:40px;
@@ -365,7 +391,7 @@ body, p, ol, ul, td {
    width:550px;
    height:auto;
    margin-left:20px;
-   margin-top:10px;
+   margin-top:25px;
    float:left;
    text-align: justify;
 }
@@ -387,6 +413,21 @@ body, p, ol, ul, td {
    margin-right:20px;
 }
 
+#imagemIndiceBHLogin{
+   width:350px;
+   height:150px;
+   margin-top:200px;
+   float:right;
+   margin-right:20px;
+}
+
+#imagemIndiceBHLeft{
+   width:280px;
+   height:290px;
+   margin-top:20px;
+   float:left;
+   margin-right:20px;
+}
 
 #espacomarcafooter{
    width:1024px;
@@ -433,9 +474,9 @@ body, p, ol, ul, td {
 
 #imagemfooteresquerdaClientes{
    width:395px;
-   height:180px;
+   height:540px;
    float:left;
-   margin-top:-390px;
+   margin-top:-520px;
 }
 
 #imagemfooteresquerdaservicos{
@@ -452,6 +493,8 @@ body, p, ol, ul, td {
    margin-top:50px;
 }
 
+.btnsair{background:url("/images/icone_sair.jpg") no-repeat; width:83px; height:35px; float:left; border: 0px; margin-right:3px; }
+
 .btnindice{background:url("/images/a_indice_cinza.jpg") no-repeat; width:71px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 .btnindice2{background:url("/images/indice_amarelo_menu.jpg") no-repeat; width:71px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 .btnindice:hover{background:url("/images/indice_amarelo_menu.jpg") no-repeat; width:71px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
@@ -459,22 +502,22 @@ body, p, ol, ul, td {
 .btnnossoservicos{background:url("/images/nosso_servico_cinza.jpg") no-repeat; width:120px !important; height:28px; float:left !important; border:0px !important; margin-right:3px;   }
 .btnnossoservicos2{background:url("/images/nosso_servico_azul.jpg") no-repeat; width:120px !important; height:28px; float:left !important; border:0px !important; margin-right:3px;   }
 .btnnossoservicos:hover{background:url("/images/nosso_servico_azul.jpg") no-repeat; width:120px !important; height:28px; float:left !important; border:0px !important; margin-right:3px;   }
- 
+
 .btnindicetv{background:url("/images/indice_tv_cinza.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
-.btnindicetv2{background:url("/images/indice_tv_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
-.btnindicetv:hover{background:url("/images/indice_tv_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
- 
+.btnindicetv2{background:url("/images/indice_tv_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
+.btnindicetv:hover{background:url("/images/indice_tv_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
+
 .btnclientes{background:url("/images/clientes_cinza.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 .btnclientes2{background:url("/images/clientes_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
-.btnclientes:hover{background:url("/images/clientes_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
+.btnclientes:hover{background:url("/images/clientes_verde.jpg") no-repeat; width:80px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 
-.btncontato{background:url("/images/contato_cinza.jpg") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
-.btncontato2{background:url("/images/contato_vinho.jpg") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
-.btncontato:hover{background:url("/images/contato_vinho.jpg") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
+.btncontato{background:url("/images/contato_cinza.png") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
+.btncontato2{background:url("/images/contato_vinho.png") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
+.btncontato:hover{background:url("/images/contato_vinho.png") no-repeat; width:70px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 
 .btninstalacoes{background:url("/images/instalacoes_cinza.jpg") no-repeat; width:97px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
-.btninstalacoes2{background:url("/images/instalacoes_vermelha.jpg") no-repeat; width:97px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
-.btninstalacoes:hover{background:url("/images/instalacoes_vermelha.jpg") no-repeat; width:97px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   } 
+.btninstalacoes2{background:url("/images/instalacoes_vermelha.jpg") no-repeat; width:97px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
+.btninstalacoes:hover{background:url("/images/instalacoes_vermelha.jpg") no-repeat; width:97px !important; height:31px; float:left !important; border:0px !important; margin-right:3px;   }
 
 .textAreaIndiceBH{width:550px; height:200px; border:1px solid #999;}
 
@@ -490,26 +533,74 @@ textarea{width:540px; height:auto; border:0px; text-align:justify;}
 
 #conteudoIframe{width:540px; height350px; text-align:justify;}
 
-#conteudoclientes{width:650px; height:370px; float:right;}
 
-#conteudoclientes ul{text-align:nome; list-style:none;}
+#conteudoclientes{width:660px; height:90px; }
+#conteudoclientes ul{text-align:none; list-style:none;}
+#conteudoclientes ul li{float:left; border: 0px;}
 
-#conteudoclientes ul li{float:left; margin-right:17px; margin-bottom:13px;}
+#conteudoclientes70{width:660px; height:70px; }
+#conteudoclientes70 ul{text-align:none; list-style:none;}
+#conteudoclientes70 ul li{float:left; border: 0px;}
+
+#conteudoclientes110{width:650px; height:110px; }
+#conteudoclientes110 ul{text-align:none; list-style:none;}
+#conteudoclientes110 ul li{float:left; border: 0px;}
+
+
+#conteudoclientecentralclientes{width: 665px; height:490px; float:right; margin-top:15px; margin-bottom:10px;}
+
+#conteudofooterlogin{
+   width:640px;
+   height:50px;
+   margin-top:-150px;
+   float:right;
+
+}
+
+#conteudofooterlogin p{
+   font-family: Calibri, verdana, arial, helvetica, sans-serif;
+   font-size:12px;
+   color:#666;
+   height:10px;
+}
+
+#conteudofooterlogin p a{
+	text-decoration:none;
+}
+
+#conteudofooterlogin p a:hover{color: #FF8C00}
+
+
+
+.espacomarcaclienteCarrefour{ margin-right:5px; margin-top:15px;}
+.espacomarcacliente5{ margin-right:5px;}
+.espacomarcacliente10{ margin-right:10px;}
+.espacomarcacliente15{ margin-right:15px;}
+.espacomarcacliente20{ margin-right:20px;}
+.espacomarcacliente25{ margin-right:25px;}
+.espacomarcacliente30{ margin-right:30px;}
+.espacomarcacliente40{ margin-right:40px;}
+.espacomarcacliente50{ margin-right:50px;}
 
 #conteudofooter{
-   width:600px;
+   width:640px;
    height:50px;
-   margin-top:10px;
+   margin-top:5px;
    float:right;
-   border:1px soild #0f0 !important;
 }
 
 #conteudofooter p{
    font-family: Calibri, verdana, arial, helvetica, sans-serif;
-   font-size:10px;
-   color:#999;
+   font-size:12px;
+   color:#666;
    height:10px;
 }
+
+#conteudofooter p a{
+	text-decoration:none;
+}
+
+#conteudofooter p a:hover{color: #FF8C00}
 
 pre {
   background-color: #eee;
@@ -524,6 +615,10 @@ div.field, div.actions {
 #notice {
   color: green;
 }
+
+.textomensagem{font-size: 15px; color: #B50009; text-align: center; }
+
+.comochegar{text-decoration:none; color: #666;}
 
 .field_with_errors {
   padding: 2px;
@@ -555,3 +650,4 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
